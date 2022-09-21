@@ -75,8 +75,7 @@ def get_counter_left(aim_date):
     next = next.replace(nowtime.year)
   else:
     print('日期格式不符合要求')
-    
-  global next
+   
   if next < nowtime:
     next = next.replace(year=next.year + 1)
   return (next - today).days
